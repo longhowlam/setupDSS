@@ -1,18 +1,4 @@
 # setupDSS
-setup R environment and dataiku DSS  from a droplet
+setup an R/RStudio and dataiku DSS environment on a digital ocean droplet.
 
-#cloud-config
-
-runcmd:
-
-  \- [ git , clone , 'https://github.com/longhowlam/setupDSS.git']
-  
-  \- echo "git cloned"
-  
-  \- [chmod, +x , /setupDSS/startit.sh]
-  
-  \- echo "changed mod"
-  
-  \- /setupDSS/startit.sh
-  
-  \- echo "Finished"
+[](droplet.PNG)
