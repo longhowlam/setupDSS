@@ -2,9 +2,6 @@
 sudo apt-get update
 sudo apt-get -y install nginx
 
-### create a user
-useradd -m ruser
-echo "ruser123" |passwd ruser --stdin
 
 ### install R, voeg toe aan trusted lijst
 sudo sh -c 'echo "deb http://cran.rstudio.com/bin/linux/ubuntu trusty/" >> /etc/apt/sources.list'
@@ -15,7 +12,9 @@ gpg -a --export E084DAB9 | sudo apt-key add -
 sudo apt-get update
 sudo apt-get -y install r-base
 
+### user was already created in cloud-config
 cd /home/ruser/
+
 ### install RStudio
 sudo apt-get -y install libapparmor1 gdebi-core
 wget https://download2.rstudio.org/rstudio-server-1.1.383-amd64.deb
