@@ -18,3 +18,8 @@ sudo apt-get -y install libxml2-dev
 sudo apt-get -y install libssl-dev
 # packages
 sudo su - -c "R -e \"install.packages('devtools', repos='http://cran.rstudio.com/')\""
+
+### install RStudio
+sudo apt-get -y install libapparmor1 gdebi-core
+wget https://download2.rstudio.org/rstudio-server-1.1.383-amd64.deb
+sudo apt-get -y install rstudio-server-1.1.383-amd64.deb
