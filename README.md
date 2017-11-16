@@ -1,0 +1,2 @@
+# setupDSS
+setup dataiku
