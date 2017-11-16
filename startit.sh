@@ -33,7 +33,7 @@ sudo chmod -R 777 /home/ruser/dataiku-dss-4.1.0/
 sudo -u ruser /home/ruser/dataiku-dss-4.1.0/installer.sh -d dataikudir -p 11000
 
 ### Start DSS
-/home/dataiku/dss_data/bin/dss start
+sudo -u ruser /home/ruser/dataikudir/bin/dss start
 
 
 ###### install additional R packages ####################################
