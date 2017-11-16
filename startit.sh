@@ -19,7 +19,7 @@ cd /home/ruser/
 ### install RStudio
 sudo apt-get -y install libapparmor1 gdebi-core
 wget https://download2.rstudio.org/rstudio-server-1.1.383-amd64.deb
-sudo apt-get -y install rstudio-server-1.1.383-amd64.deb
+sudo gdebi --n /home/ruser/rstudio-server-1.1.383-amd64.deb
 
 ### install packages
 # installeer dependencies om devtools te kunnen installeren
