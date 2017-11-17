@@ -52,5 +52,12 @@ sudo su - -c "R -e \"install.packages('h2o', repos='http://cran.rstudio.com/')\"
 sudo su - -c "R -e \"install.packages('sparklyr', repos='http://cran.rstudio.com/')\""
 sudo su - -c "R -e \"install.packages('keras', repos='http://cran.rstudio.com/')\""
 
+###### Setup pip so that TF can be installed ##############################################
+sudo apt-get -y install python-pip python-virtualenv
 
+### Install via R keras
+sudo su - -c "R -e \"keras::install_keras()\""
+ 
+### install spark, via sparklyr
+sudo su - -c "R -e \"sparklyr::spark_install(version = '2.2.0')\""
 
