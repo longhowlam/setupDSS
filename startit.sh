@@ -3,7 +3,7 @@ sudo apt-get update
 sudo apt-get -y install nginx
 
 
-###### install R, voeg toe aan trusted lijst #########################################
+###### install R #########################################
 sudo sh -c 'echo "deb http://cran.rstudio.com/bin/linux/ubuntu trusty/" >> /etc/apt/sources.list'
 ## add keys
 gpg --keyserver keyserver.ubuntu.com --recv-key E084DAB9
