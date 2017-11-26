@@ -35,6 +35,14 @@ sudo -u ruser /home/ruser/dataiku-dss-4.1.0/installer.sh -d dataikudir -p 11000
 ### Start DSS
 sudo -u ruser /home/ruser/dataikudir/bin/dss start
 
+
+###### Install Shiny server ###########################################################
+### first install shiny r package 
+sudo su - -c "R -e \"install.packages('shiny', repos='http://cran.rstudio.com/')\""
+wget https://download3.rstudio.org/ubuntu-12.04/x86_64/shiny-server-1.5.5.872-amd64.deb
+sudo gdebi --n shiny-server-1.5.5.872-amd64.deb
+
+
 ###### Install Java for h2o ###########################################################
 sudo apt-get update
 sudo apt-get install default-jdk
