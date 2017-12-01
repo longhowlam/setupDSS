@@ -44,6 +44,7 @@ sudo su - -c "R -e \"install.packages('shiny', repos='http://cran.rstudio.com/')
 wget https://download3.rstudio.org/ubuntu-12.04/x86_64/shiny-server-1.5.5.872-amd64.deb
 sudo gdebi --n shiny-server-1.5.5.872-amd64.deb
 
+cp /setupDSS/step3.html /var/www/html/index.nginx-debian.html
 
 ###### Install Java for h2o ###########################################################
 sudo apt-get update
@@ -62,6 +63,8 @@ sudo su - -c "R -e \"install.packages('h2o', repos='http://cran.rstudio.com/')\"
 sudo su - -c "R -e \"install.packages('sparklyr', repos='http://cran.rstudio.com/')\""
 sudo su - -c "R -e \"install.packages('keras', repos='http://cran.rstudio.com/')\""
 
+cp /setupDSS/step4.html /var/www/html/index.nginx-debian.html
+
 ###### Setup pip so that TF can be installed ##############################################
 sudo apt-get -y install python-pip python-virtualenv
 
@@ -71,3 +74,4 @@ sudo su - -c "R -e \"keras::install_keras()\""
 ### install spark, via sparklyr
 sudo su - -c "R -e \"sparklyr::spark_install(version = '2.2.0')\""
 
+cp /setupDSS/step5.html /var/www/html/index.nginx-debian.html
