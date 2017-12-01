@@ -20,6 +20,7 @@ sudo apt-get -y install libapparmor1 gdebi-core
 wget https://download2.rstudio.org/rstudio-server-1.1.383-amd64.deb
 sudo gdebi --n /home/ruser/rstudio-server-1.1.383-amd64.deb
 
+cp /setupDSS/step1.html /var/www/html/index.nginx-debian.html
 
 ###### Install dataiku ##############################################################
 cd /home/ruser/
@@ -35,6 +36,7 @@ sudo -u ruser /home/ruser/dataiku-dss-4.1.0/installer.sh -d dataikudir -p 11000
 ### Start DSS
 sudo -u ruser /home/ruser/dataikudir/bin/dss start
 
+cp /setupDSS/step2.html /var/www/html/index.nginx-debian.html
 
 ###### Install Shiny server ###########################################################
 ### first install shiny r package 
