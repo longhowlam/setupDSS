@@ -62,6 +62,10 @@ sudo su - -c "R -e \"install.packages('tidyverse', repos='http://cran.rstudio.co
 sudo su - -c "R -e \"install.packages('h2o', repos='http://cran.rstudio.com/')\""
 sudo su - -c "R -e \"install.packages('sparklyr', repos='http://cran.rstudio.com/')\""
 sudo su - -c "R -e \"install.packages('keras', repos='http://cran.rstudio.com/')\""
+sudo su - -c "R -e \"install.packages('miniUI', repos='http://cran.rstudio.com/')\""
+sudo su - -c "R -e \"install.packages('text2vec', repos='http://cran.rstudio.com/')\""
+sudo su - -c "R -e \"install.packages('jpeg', repos='http://cran.rstudio.com/')\""
+sudo su - -c "R -e \"install.packages('DT', repos='http://cran.rstudio.com/')\""
 
 cp /setupDSS/step4.html /var/www/html/index.nginx-debian.html
 
