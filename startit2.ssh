@@ -31,13 +31,15 @@ sudo apt-get -y install libssl-dev
 ###### Setup pip so that TF can be installed ##############################################
 sudo apt-get -y install python-pip python-virtualenv
 
-### Install via R keras
+### install R packahe keras
+sudo su - -c "R -e \"install.packages('keras', repos='http://cran.rstudio.com/')\""
+
+### Install keras via R
 sudo su - -c "R -e \"keras::install_keras()\""
  
-### packages
+### additional R packages
 sudo su - -c "R -e \"install.packages('devtools', repos='http://cran.rstudio.com/')\""
 sudo su - -c "R -e \"install.packages('tidyverse', repos='http://cran.rstudio.com/')\""
-sudo su - -c "R -e \"install.packages('keras', repos='http://cran.rstudio.com/')\""
 sudo su - -c "R -e \"install.packages('text2vec', repos='http://cran.rstudio.com/')\""
 sudo su - -c "R -e \"install.packages('jpeg', repos='http://cran.rstudio.com/')\""
 sudo su - -c "R -e \"install.packages('DT', repos='http://cran.rstudio.com/')\""
@@ -46,5 +48,4 @@ sudo su - -c "R -e \"install.packages('DT', repos='http://cran.rstudio.com/')\""
 ###### Install Java for h2o ###########################################################
 sudo apt-get update
 sudo apt-get install default-jdk
-
 sudo su - -c "R -e \"install.packages('h2o', repos='http://cran.rstudio.com/')\""
