@@ -49,6 +49,11 @@ RUN  apt-get update &&  apt-get -y install default-jdk
 RUN R -e "install.packages('keras', repos='http://cran.rstudio.com/')"
 RUN R -e "install.packages('h2o', repos='http://cran.rstudio.com/')"
 RUN R -e "install.packages('tidyverse', repos='http://cran.rstudio.com/')"
+RUN R -e "install.packages('caTools', repos='http://cran.rstudio.com/')"
+RUN R -e "install.packages('glmnet', repos='http://cran.rstudio.com/')"
+RUN R -e "install.packages('plotly', repos='http://cran.rstudio.com/')"
+RUN R -e "install.packages('xgboost', repos='http://cran.rstudio.com/')"
+RUN R -e "install.packages('text2vec', repos='http://cran.rstudio.com/')"
 
 
 CMD ["/init"]
