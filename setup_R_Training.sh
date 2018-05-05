@@ -67,6 +67,20 @@ sudo su - -c "R -e \"install.packages('sunburstR', repos='http://cran.rstudio.co
 sudo apt-get update
 sudo apt-get install default-jdk
 
+sudo su - -c "R -e \"install.packages('xgboost', repos='http://cran.rstudio.com/')\""
+sudo su - -c "R -e \"install.packages('rpart', repos='http://cran.rstudio.com/')\""
+sudo su - -c "R -e \"install.packages('glmnet', repos='http://cran.rstudio.com/')\""
+sudo su - -c "R -e \"install.packages('ranger', repos='http://cran.rstudio.com/')\""
+
+sudo su - -c "R -e \"install.packages('rattle', repos='http://cran.rstudio.com/')\""
+sudo su - -c "R -e \"install.packages('ggfortify', repos='http://cran.rstudio.com/')\""
+sudo su - -c "R -e \"install.packages('rsample', repos='http://cran.rstudio.com/')\""
+sudo su - -c "R -e \"install.packages('pROC', repos='http://cran.rstudio.com/')\""
+sudo su - -c "R -e \"install.packages('ROCR', repos='http://cran.rstudio.com/')\""
+sudo su - -c "R -e \"install.packages('titanic', repos='http://cran.rstudio.com/')\""
+
+
+
 sudo su - -c "R -e \"install.packages('h2o', repos='http://cran.rstudio.com/')\""
 sudo su - -c "R -e \"install.packages('sparklyr', repos='http://cran.rstudio.com/')\""
 sudo su - -c "R -e \"install.packages('keras', repos='http://cran.rstudio.com/')\""
