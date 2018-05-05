@@ -1,12 +1,14 @@
 ## Setup R training op een DO machientje
 
 # login eerste
-ssh root@128.199.58.136
+ssh root@167.99.40.25
 
 # maak een user ruser met pasword ruser123
 useradd -m ruser
 passwd    ruser
 ruser123
+gpasswd -a ruser sudo
+
 
 ###### install R #####################################################################################
 sudo sh -c 'echo "deb http://cran.rstudio.com/bin/linux/ubuntu trusty/" >> /etc/apt/sources.list'
@@ -72,7 +74,10 @@ sudo su - -c "R -e \"install.packages('rpart', repos='http://cran.rstudio.com/')
 sudo su - -c "R -e \"install.packages('glmnet', repos='http://cran.rstudio.com/')\""
 sudo su - -c "R -e \"install.packages('ranger', repos='http://cran.rstudio.com/')\""
 
+sudo apt-get install wajig 
+wajig install libgtk2.0-dev
 sudo su - -c "R -e \"install.packages('rattle', repos='http://cran.rstudio.com/')\""
+
 sudo su - -c "R -e \"install.packages('ggfortify', repos='http://cran.rstudio.com/')\""
 sudo su - -c "R -e \"install.packages('rsample', repos='http://cran.rstudio.com/')\""
 sudo su - -c "R -e \"install.packages('pROC', repos='http://cran.rstudio.com/')\""
@@ -85,3 +90,4 @@ sudo su - -c "R -e \"install.packages('h2o', repos='http://cran.rstudio.com/')\"
 sudo su - -c "R -e \"install.packages('sparklyr', repos='http://cran.rstudio.com/')\""
 sudo su - -c "R -e \"install.packages('keras', repos='http://cran.rstudio.com/')\""
 
+sudo su - -c "R -e \"install.packages('mlr', repos='http://cran.rstudio.com/')\""
