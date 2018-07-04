@@ -104,3 +104,9 @@ sudo su - -c "R -e \"install.packages('arules', repos='http://cran.rstudio.com/'
 sudo su - -c "R -e \"install.packages('arulesViz', repos='http://cran.rstudio.com/')\""
 sudo su - -c "R -e \"install.packages('sparklyr', repos='http://cran.rstudio.com/')\""
 
+sudo su - -c "R -e \"install.packages('h2o', repos='http://cran.rstudio.com/')\""
+sudo su - -c "R -e \"install.packages('xgboost', repos='http://cran.rstudio.com/')\""
+
+#### java, is nodig voor h2o and spark
+sudo apt-get update
+sudo apt-get -y install default-jdk
